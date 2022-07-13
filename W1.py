@@ -35,14 +35,23 @@
 # elif x<0 and y<0:
 #     print('Третья четверть')
 #№4
-zon=int(input("введите предполагаемую четверть "))
-if zon>4 or zon<1:
-    print('Нет такой четверти ')
-elif zon==1:
-    print('x>0 and y>0   пример x=32 y=15')
-elif zon==2:
-    print('x<0 and y>0   пример x=-6 y=9')
-elif zon==3:
-    print('x<0 and y<0   пример x=-10 y=-1')
-elif zon==4:
-    print('x>0 and y<0   пример x=2 y=-100')
+# zon=int(input("введите предполагаемую четверть "))
+# if zon>4 or zon<1:
+#     print('Нет такой четверти ')
+# elif zon==1:
+#     print('x>0 and y>0   пример x=32 y=15')
+# elif zon==2:
+#     print('x<0 and y>0   пример x=-6 y=9')
+# elif zon==3:
+#     print('x<0 and y<0   пример x=-10 y=-1')
+# elif zon==4:
+#     print('x>0 and y<0   пример x=2 y=-100')
+#№5
+import math
+
+xa=float(input('Введите X точки А '))
+ya=float(input('Введите Y точки А '))
+xb=float(input('Введите X точки B '))
+yb=float(input('Введите Y точки B '))
+dista=math.sqrt(math.pow(xb-xa,2)+math.pow(yb-ya,2))
+print('Расстояние=',dista)
