@@ -22,16 +22,27 @@
 #             if res ==res2:
 #                 print('Верное равенство')
 #№3
-x=int(input('Введите кординату X '))
-y=int(input('Введите кординату Y '))
-if x==0 and y==0:
-    print('Недопустимое значение')
-elif x>0 and y>0:
-    print('Первая четверть')
-elif x>0 and y<0:
-    print('Четветрая четверть')
-elif x<0 and y>0:
-    print('Вторая четверть')
-elif x<0 and y<0:
-    print('Третья четверть')
-
+# x=int(input('Введите кординату X '))
+# y=int(input('Введите кординату Y '))
+# if x==0 and y==0:
+#     print('Недопустимое значение')
+# elif x>0 and y>0:
+#     print('Первая четверть')
+# elif x>0 and y<0:
+#     print('Четветрая четверть')
+# elif x<0 and y>0:
+#     print('Вторая четверть')
+# elif x<0 and y<0:
+#     print('Третья четверть')
+#№4
+zon=int(input("введите предполагаемую четверть "))
+if zon>4 or zon<1:
+    print('Нет такой четверти ')
+elif zon==1:
+    print('x>0 and y>0   пример x=32 y=15')
+elif zon==2:
+    print('x<0 and y>0   пример x=-6 y=9')
+elif zon==3:
+    print('x<0 and y<0   пример x=-10 y=-1')
+elif zon==4:
+    print('x>0 and y<0   пример x=2 y=-100')
