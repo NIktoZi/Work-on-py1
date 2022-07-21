@@ -15,14 +15,26 @@
 #     sp2.append(su)
 # print(sp2)
 #3
-sp=[1.1, 1.2, 3.1, 5.567, 10.003]
-ma=-10
-mi=1000
-fr=0
-for i in range(len(sp)):
-    fr=sp[i]%1
-    if fr>ma:
-        ma=fr
-    elif fr<ma and fr<mi:
-        mi=fr
-print(ma-mi)
+# sp=[1.1, 1.2, 3.1, 5.567, 10.003]
+# ma=-10
+# mi=1000
+# fr=0
+# for i in range(len(sp)):
+#     fr=sp[i]%1
+#     if fr>ma:
+#         ma=fr
+#     elif fr<ma and fr<mi:
+#         mi=fr
+# print(ma-mi)
+#4
+def dectodv(d):
+    if d>1:
+        dectodv(d//2)
+    print(d%2,end=' ')
+
+
+
+des=int(input('число в дес сс '))
+if des<0:
+    des=-des
+dectodv(des)
