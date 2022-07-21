@@ -28,13 +28,27 @@
 # print(ma-mi)
 #4
 def dectodv(d):
-    if d>1:
-        dectodv(d//2)
-    print(d%2,end=' ')
+     if d>1:
+         dectodv(d//2)
+     print(d%2,end=' ')
 
+# des=int(input('число в дес сс '))
+# if des<0:
+#     des=-des
+# dectodv(des)
+#5
+def fi(k):
+    if k>-1:
+        if k==0:
+            return 1
+        elif k==1:
+            return 1
+        else:
+            return fi(k-1)+fi(k-2)
+    if k<=-1:
+        return((-1)**k+1)*fi(-k)
+    lis=[k]
+    print(lis)
 
-
-des=int(input('число в дес сс '))
-if des<0:
-    des=-des
-dectodv(des)
+fibo=int(input("Введите индекс "))
+print(fi(fibo))
