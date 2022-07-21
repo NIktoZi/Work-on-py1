@@ -47,11 +47,20 @@
 # elif zon==4:
 #     print('x>0 and y<0   пример x=2 y=-100')
 #№5
-import math
+# import math
 
-xa=float(input('Введите X точки А '))
-ya=float(input('Введите Y точки А '))
-xb=float(input('Введите X точки B '))
-yb=float(input('Введите Y точки B '))
-dista=math.sqrt(math.pow(xb-xa,2)+math.pow(yb-ya,2))
-print('Расстояние=',dista)
+# xa=float(input('Введите X точки А '))
+# ya=float(input('Введите Y точки А '))
+# xb=float(input('Введите X точки B '))
+# yb=float(input('Введите Y точки B '))
+# dista=math.sqrt(math.pow(xb-xa,2)+math.pow(yb-ya,2))
+# print('Расстояние=',dista)
+
+def s(a):
+    result = 0
+    while a > 0:
+        result += a % 10
+        a //= 10
+    return result
+n=input()
+print(s(n))
