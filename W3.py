@@ -47,8 +47,7 @@ def fi(k):
             return fi(k-1)+fi(k-2)
     if k<=-1:
         return((-1)**k+1)*fi(-k)
-    lis=[k]
-    print(lis)
+
 
 fibo=int(input("Введите индекс "))
 print(fi(fibo))

@@ -18,6 +18,7 @@
 # print(pi)
 # print(i-1)
 #3
+
 Numb=int(input("Введите число "))
 i=2
 list_del=[]
