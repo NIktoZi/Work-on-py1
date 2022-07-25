@@ -19,14 +19,28 @@
 # print(i-1)
 #3
 
-Numb=int(input("Введите число "))
-i=2
-list_del=[]
-while i<Numb:
-    if Numb%i==0:
-        list_del.append(i)
-        Numb //=i
-        i+=1
+# Numb=int(input("Введите число "))
+# i=2
+# list_del=[]
+# while i<Numb:
+#     if Numb%i==0:
+#         list_del.append(i)
+#         Numb //=i
+#         i+=1
+#     else:
+#         i+=1
+# print('Делители получились-',list_del)
+#4
+string=str(input("Введите строку со слова, в которых есть числа-"))
+string+=" "+string
+i=0
+k=1
+if string[i]==' ' and string[k]==' ':
+    c=i+1
+    if string[c]==range(0,9):
+        del string[i+1,k]
     else:
-        i+=1
-print('Делители получились-',list_del)
+        c+=1
+else:
+    k+=1
+print(string)
